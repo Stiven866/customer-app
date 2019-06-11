@@ -1,20 +1,17 @@
 {
   "customers": [
     {
-        "dni": "27000000",
-        "name": "Juan Perez-",
-        "age": 37
-      },
-      {
-        "dni": "30000001",
-        "name": "Otro mas",
-        "age": 35
-      },
-      {
-        "dni": "33000000",
-        "name": "Luis Martinez",
-        "age": 32
-      }
+      "id": "30000001",
+      "dni": "30000001",
+      "name": "STIVEN",
+      "age": 373
+    },
+    {
+      "id": "wXlmSOi",
+      "dni": "27000000",
+      "name": "JUAN PEREZ-",
+      "age": 132
+    }
   ],
   "posts": [
     {

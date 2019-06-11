@@ -4,22 +4,21 @@ import CustomerListItem from './CustomerListItem';
 
 const CustomerList = ({ customers, urlPath}) => {
     return (
-        <div>
-            <div className="customer-list">
-            {
-                customers.map( c => 
-                    <CustomerListItem
-                        key={c.dni}
-                        name={c.name}
-                        editAction={'Editar'}
-                        delAction={'Eliminar'}
-                        urlPath={urlPath}
-                        dni={c.dni}
-                    />
-                    ) 
-            }
-                
-            </div>
+
+        <div className="customers-list">
+        {
+            customers.map( c => 
+                <CustomerListItem
+                    key={c.dni}
+                    name={c.name}
+                    editAction={'Editar'}
+                    delAction={'Eliminar'}
+                    urlPath={urlPath}
+                    dni={c.dni}
+                />
+                ) 
+        }
+            
         </div>
     );
 };

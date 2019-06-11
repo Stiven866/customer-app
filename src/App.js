@@ -5,8 +5,8 @@ import './App.css';
 import HomeContainer from './containers/HomeContainer';
 import CustomersContainer from './containers/CustomersContainer';
 import CustomerContainer from './containers/CustomerContainer';
+import NewCustomerContainer from './containers/NewCustomerContainer';
 
-const renderCustomerNewContainer = () => <h1>Customer New Container</h1>;
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
         <Route exact path="/customers/" component={CustomersContainer}/>
         
         <Switch>
-          <Route path="/customers/new" component={renderCustomerNewContainer}/>
+          <Route path="/customers/new" component={NewCustomerContainer}/>
           <Route path="/customers/:dni" render={props => <CustomerContainer dni={props.match.params.dni}/>}/>
         </Switch>
      </div>
